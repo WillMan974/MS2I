@@ -13,9 +13,9 @@ public interface ClientDAO {
 	@Transactional(propagation=Propagation.REQUIRED, rollbackFor=BanqueException.class)
 	public abstract void ajouterClient (Client client) throws BanqueException;
 
-	@Transactional(propagation=Propagation.MANDATORY)
+	@Transactional(propagation=Propagation.REQUIRED)
 	public abstract Client rechercherClientParId (Long id) throws BanqueException;
 
-	@Transactional(propagation=Propagation.MANDATORY)
+	@Transactional(propagation=Propagation.REQUIRED)
 	public abstract List<Client> rechercherTousLesClients() throws BanqueException;
 }

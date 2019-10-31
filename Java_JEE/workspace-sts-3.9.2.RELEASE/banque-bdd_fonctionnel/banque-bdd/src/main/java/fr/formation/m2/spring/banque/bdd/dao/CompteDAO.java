@@ -14,10 +14,10 @@ public interface CompteDAO {
 	@Transactional(propagation=Propagation.REQUIRED , rollbackFor=BanqueException.class)
 	public abstract void ajouterCompte (Compte compte) throws BanqueException;
 
-	@Transactional(propagation=Propagation.MANDATORY)
+	@Transactional(propagation=Propagation.REQUIRED)
 	public abstract Compte rechercherCompteParNumero (Long numero) throws BanqueException;
 	
-	@Transactional(propagation=Propagation.MANDATORY)
+	@Transactional(propagation=Propagation.REQUIRED)
 	public abstract List<Compte> rechercherComptesClient(Client client) throws BanqueException;
 	
 	@Transactional(propagation=Propagation.REQUIRED , rollbackFor=BanqueException.class)

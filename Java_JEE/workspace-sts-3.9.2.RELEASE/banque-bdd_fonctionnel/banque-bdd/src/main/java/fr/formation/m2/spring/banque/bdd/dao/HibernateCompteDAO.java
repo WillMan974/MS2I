@@ -35,8 +35,8 @@ public class HibernateCompteDAO implements CompteDAO {
 	//@Override
 	public List<Compte> rechercherComptesClient(Client client) throws BanqueException {
 		try {
-			String sql = "from compte as c where c.client=?";
-			return sessionFactory.getCurrentSession().createQuery(sql).setEntity(1, client).list();
+			String sql = "from Compte as c where c.client=?";
+			return sessionFactory.getCurrentSession().createQuery(sql).setEntity(0, client).list();
 		} catch (HibernateException e) {
 			throw new BanqueException("Erreur de recherche des comptes");
 		}
