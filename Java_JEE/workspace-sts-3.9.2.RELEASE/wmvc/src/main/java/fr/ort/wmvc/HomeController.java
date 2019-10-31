@@ -78,11 +78,11 @@ public class HomeController {
 		return "test3";
 	}
 	
-	@RequestMapping(value="/test3")
+	@RequestMapping(value="/test3a")
 	public String option(@RequestParam (value="param", required=false) String param, Model model) {
 		model.addAttribute("chaine", param);
 		if (param.isEmpty()) param = "paramètre absent";
-		return "test3"; 
+		return "test3a"; 
 	}
 	
 }
