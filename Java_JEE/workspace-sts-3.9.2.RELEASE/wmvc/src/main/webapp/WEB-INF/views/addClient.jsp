@@ -28,7 +28,7 @@
  <p><input type="text" name="adresse"></p>
  <p><input type="text" name="codePostal"></p>
  <p><input type="text" name="ville"></p>
- <p><input type="submit" value="ajouter"></p>
+ <p><input type="submit" value="Ajouter"></p>
 </form>
 
 </body>

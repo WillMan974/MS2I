@@ -1,0 +1,8 @@
+fr\formation\m2\spring\banque\bdd\entities\Compte.class
+fr\formation\m2\spring\banque\bdd\util\BanqueException.class
+fr\formation\m2\spring\banque\bdd\dao\HibernateClientDAO.class
+fr\formation\m2\spring\banque\bdd\entities\Client.class
+fr\formation\m2\spring\banque\bdd\dao\HibernateCompteDAO.class
+fr\fomation\m2\spring\banque\bdd\exec\Start.class
+fr\formation\m2\spring\banque\bdd\dao\ClientDAO.class
+fr\formation\m2\spring\banque\bdd\dao\CompteDAO.class

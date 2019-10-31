@@ -4,6 +4,7 @@ import javax.servlet.http.HttpServletRequest;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
@@ -39,6 +40,23 @@ public class FormController {
 		mod.addAttribute("nouveauClient", c);
 		
 		return "resultat"; // 
+	}
+	
+	@RequestMapping(value="/modifClient")
+	public String clientModifie(Model mod) {
+		return "modifyClient";
+	}
+	
+	@ModelAttribute ("clientAModifier")
+	public Client clientAModifier() {
+		Client c1 = new Client();
+		c1.setNom("Durand");
+		c1.setPrenom("Pierre");
+		c1.setAdresse("3 place du Capitole");
+		c1.setVille("Toulouse");
+		c1.setCodePostal("31000");
+		return c1;
+		
 	}
 
 }
