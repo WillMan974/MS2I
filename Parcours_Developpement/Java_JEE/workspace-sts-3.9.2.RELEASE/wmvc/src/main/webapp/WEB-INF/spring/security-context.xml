@@ -17,6 +17,7 @@
 	
 	<!-- Sur quoi agira l'authentification -->
 	<http auto-config="true">
+		<http-basic/>
 		<intercept-url pattern="/admin/**" access="ROLE_ADMIN"/>
 	</http>
 </beans:beans>
