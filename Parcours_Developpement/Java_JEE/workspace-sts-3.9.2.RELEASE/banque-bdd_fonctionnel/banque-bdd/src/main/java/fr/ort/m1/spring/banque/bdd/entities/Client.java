@@ -1,4 +1,4 @@
-package fr.formation.m2.spring.banque.bdd.entities;
+package fr.ort.m1.spring.banque.bdd.entities;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -11,31 +11,31 @@ import org.hibernate.annotations.Proxy;
 
 
 @Entity
-@Proxy(lazy=false)
-@Table(name="client")
+@Proxy(lazy = false)
+@Table(name = "client")
 public class Client {
-	
+
 	@Id
-	@GeneratedValue(strategy=GenerationType.AUTO)
-	@Column(name="id")
+	@GeneratedValue(strategy = GenerationType.AUTO)
+	@Column(name = "id")
 	private long id;
-	
-	@Column(name="prenom")
+
+	@Column(name = "prenom")
 	private String prenom;
-	
-	@Column(name="nom")
+
+	@Column(name = "nom")
 	private String nom;
-	
-	@Column(name="adresse")
+
+	@Column(name = "adresse")
 	private String adresse;
-	
-	@Column(name="codepostal")
-	private String codepostal;
-	
-	@Column(name="ville")
+
+	@Column(name = "codePostal")
+	private String codePostal;
+
+	@Column(name = "ville")
 	private String ville;
-	
-	@Column(name="motdepasse")
+
+	@Column(name = "motdepasse")
 	private String motdepasse;
 
 	public long getId() {
@@ -70,12 +70,12 @@ public class Client {
 		this.adresse = adresse;
 	}
 
-	public String getCodepostal() {
-		return codepostal;
+	public String getcodePostal() {
+		return codePostal;
 	}
 
-	public void setCodepostal(String codepostal) {
-		this.codepostal = codepostal;
+	public void setCodePostal(String codePostal) {
+		this.codePostal = codePostal;
 	}
 
 	public String getVille() {
@@ -93,10 +93,5 @@ public class Client {
 	public void setMotdepasse(String motdepasse) {
 		this.motdepasse = motdepasse;
 	}
-	
-	
-	
-	
-	
 
 }

@@ -1,13 +1,13 @@
-package fr.formation.m2.spring.banque.bdd.dao;
+package fr.ort.m1.spring.banque.bdd.dao;
 
 import java.util.List;
 
 import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
 
-import fr.formation.m2.spring.banque.bdd.entities.Client;
-import fr.formation.m2.spring.banque.bdd.entities.Compte;
-import fr.formation.m2.spring.banque.bdd.util.BanqueException;
+import fr.ort.m1.spring.banque.bdd.entities.Client;
+import fr.ort.m1.spring.banque.bdd.entities.Compte;
+import fr.ort.m1.spring.banque.bdd.util.BanqueException;
 
 public interface CompteDAO {
 	

@@ -2,9 +2,9 @@ package fr.ort.m1.spring.metier;
 
 import java.util.List;
 
-import fr.formation.m2.spring.banque.bdd.entities.Client;
-import fr.formation.m2.spring.banque.bdd.entities.Compte;
-import fr.formation.m2.spring.banque.bdd.util.BanqueException;
+import fr.ort.m1.spring.banque.bdd.entities.Client;
+import fr.ort.m1.spring.banque.bdd.entities.Compte;
+import fr.ort.m1.spring.banque.bdd.util.BanqueException;
 
 public interface BanqueService {
 	

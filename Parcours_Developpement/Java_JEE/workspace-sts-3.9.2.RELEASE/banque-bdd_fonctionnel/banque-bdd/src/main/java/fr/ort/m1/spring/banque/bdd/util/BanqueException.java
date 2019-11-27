@@ -1,4 +1,4 @@
-package fr.formation.m2.spring.banque.bdd.util;
+package fr.ort.m1.spring.banque.bdd.util;
 
 import org.hibernate.SessionFactory;
 

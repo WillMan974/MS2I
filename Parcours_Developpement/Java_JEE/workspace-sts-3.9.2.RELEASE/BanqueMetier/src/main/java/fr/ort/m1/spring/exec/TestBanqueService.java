@@ -5,9 +5,9 @@ import java.util.List;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-import fr.formation.m2.spring.banque.bdd.entities.Client;
-import fr.formation.m2.spring.banque.bdd.entities.Compte;
-import fr.formation.m2.spring.banque.bdd.util.BanqueException;
+import fr.ort.m1.spring.banque.bdd.entities.Client;
+import fr.ort.m1.spring.banque.bdd.entities.Compte;
+import fr.ort.m1.spring.banque.bdd.util.BanqueException;
 import fr.ort.m1.spring.metier.BanqueService;
 
 public class TestBanqueService {
@@ -22,7 +22,7 @@ public class TestBanqueService {
 		List<Compte> comptes = null;
 		
 		try {
-			Client c1 = bs.authentifier("1", "1234");
+			Client c1 = bs.authentifier("2", "abcd");
 			comptes = bs.mesComptes(c1.getId());
 			
 			long compteADebiter = comptes.get(0).getNumero();

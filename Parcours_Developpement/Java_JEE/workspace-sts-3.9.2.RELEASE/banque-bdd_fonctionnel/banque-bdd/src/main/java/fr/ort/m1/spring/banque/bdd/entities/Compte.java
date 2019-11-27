@@ -1,4 +1,4 @@
-package fr.formation.m2.spring.banque.bdd.entities;
+package fr.ort.m1.spring.banque.bdd.entities;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;

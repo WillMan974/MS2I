@@ -34,11 +34,11 @@
 		</property>
 	</bean>
 	<bean id="clientDAO"
-		class="fr.formation.m2.spring.banque.bdd.dao.HibernateClientDAO">
+		class="fr.ort.m1.spring.banque.bdd.dao.HibernateClientDAO">
 		<property name="sessionFactory" ref="sessionFactory"></property>
 	</bean>
 	<bean id="compteDAO"
-		class="fr.formation.m2.spring.banque.bdd.dao.HibernateCompteDAO">
+		class="fr.ort.m1.spring.banque.bdd.dao.HibernateCompteDAO">
 		<property name="sessionFactory" ref="sessionFactory"></property>
 	</bean>
 	<bean id="transactionManager"

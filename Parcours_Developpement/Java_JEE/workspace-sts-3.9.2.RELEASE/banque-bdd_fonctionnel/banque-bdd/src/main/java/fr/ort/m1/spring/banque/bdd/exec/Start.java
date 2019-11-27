@@ -1,13 +1,13 @@
-package fr.fomation.m2.spring.banque.bdd.exec;
+package fr.ort.m1.spring.banque.bdd.exec;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-import fr.formation.m2.spring.banque.bdd.dao.ClientDAO;
-import fr.formation.m2.spring.banque.bdd.dao.CompteDAO;
-import fr.formation.m2.spring.banque.bdd.entities.Client;
-import fr.formation.m2.spring.banque.bdd.entities.Compte;
-import fr.formation.m2.spring.banque.bdd.util.BanqueException;
+import fr.ort.m1.spring.banque.bdd.dao.ClientDAO;
+import fr.ort.m1.spring.banque.bdd.dao.CompteDAO;
+import fr.ort.m1.spring.banque.bdd.entities.Client;
+import fr.ort.m1.spring.banque.bdd.entities.Compte;
+import fr.ort.m1.spring.banque.bdd.util.BanqueException;
 
 public class Start {
 	private static ApplicationContext contexte;
@@ -19,7 +19,7 @@ public class Start {
 		c1.setNom("Dubois");
 		c1.setPrenom("Pierre");
 		c1.setAdresse("rue de Rémusat");
-		c1.setCodepostal("31000");
+		c1.setCodePostal("31000");
 		c1.setVille("Toulouse");
 		c1.setMotdepasse("1234");
 		
@@ -27,7 +27,7 @@ public class Start {
 		c2.setNom("Durand");
 		c2.setPrenom("Paul");
 		c2.setAdresse("rue des lois");
-		c2.setCodepostal("31000");
+		c2.setCodePostal("31000");
 		c2.setVille("Toulouse");
 		c2.setMotdepasse("abcd");
 		
