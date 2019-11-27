@@ -23,14 +23,25 @@
 </style>
 
 <body>
-<form:form method="post" modelAttribute="clientAModifier" action="ajoutClient">
- <p><form:input path="nom"/></p>
- <p><form:input path="prenom"/></p>
- <p><form:input path="adresse"/></p>
- <p><form:input path="codePostal"/></p>
- <p><form:input path="ville"/></p>
- <p><input type="submit" value="Modifier"/></p>
-</form:form>
+
+	<label for="customers-select">Customer to modify :</label><br>
+
+	<select name="pets" id="customers-select">
+	    <option value="">--Please choose a customer--</option>
+	    <c:forEach var="client" items="${customersList}">
+	    	<option value="${client.id}">${client.nom}</option>
+	    </c:forEach>
+	    
+	</select>
+
+	<form:form method="post" modelAttribute="clientAModifier" action="modifClient">
+		<p><form:input path="nom"/></p>
+		<p><form:input path="prenom"/></p>
+		<p><form:input path="adresse"/></p>
+		<p><form:input path="codepostal"/></p>
+		<p><form:input path="ville"/></p>
+		<p><input type="submit" value="MODIFIER"/></p>
+	</form:form>
 
 </body>
 

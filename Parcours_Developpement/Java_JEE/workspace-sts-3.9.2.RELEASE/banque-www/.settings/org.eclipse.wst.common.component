@@ -7,7 +7,11 @@
         <dependent-module archiveName="BanqueMetier-0.0.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/BanqueMetier/BanqueMetier">
             <dependency-type>uses</dependency-type>
         </dependent-module>
+<<<<<<< HEAD
         <dependent-module archiveName="banque-bdd-0.0.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/banque-bdd/banque-bdd">
+=======
+        <dependent-module archiveName="banque-bdd-0.0.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/banque-bddok_banque-bdd/banque-bddok_banque-bdd">
+>>>>>>> a97727d6a069b7b22ae17b120f1ebbfa626c6673
             <dependency-type>uses</dependency-type>
         </dependent-module>
 		<property name="java-output-path" value="target/classes"/>

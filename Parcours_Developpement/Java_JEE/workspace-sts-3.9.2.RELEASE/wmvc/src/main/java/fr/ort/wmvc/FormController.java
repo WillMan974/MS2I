@@ -42,10 +42,12 @@ public class FormController {
 		return "resultat"; // 
 	}
 	
+	
 	@RequestMapping(value="/modifClient")
 	public String clientModifie(Model mod) {
 		return "modifyClient";
 	}
+	
 	
 	@ModelAttribute ("clientAModifier")
 	public Client clientAModifier() {

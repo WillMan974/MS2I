@@ -22,6 +22,9 @@
 </style>
 
 <body>
+
+<h1>${message}</h1>
+
 <form method="post">
  <p><input type="text" placeholder="Nom" name="nom"></p>
  <p><input type="text" placeholder="Prénom" name="prenom"></p>

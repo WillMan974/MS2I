@@ -94,4 +94,14 @@ public class Client {
 		this.motdepasse = motdepasse;
 	}
 
+	@Override
+	public String toString() {
+		String newLine = System.getProperty("line.separator");
+		
+		return this.nom + " " + this.prenom + newLine + this.adresse + newLine + this.codePostal + newLine + this.ville; 
+	}	
+	
+	public String lightToString() {
+		return this.nom + " " + this.prenom; 
+	}
 }

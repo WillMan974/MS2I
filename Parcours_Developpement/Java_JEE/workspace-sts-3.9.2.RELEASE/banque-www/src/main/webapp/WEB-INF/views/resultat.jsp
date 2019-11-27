@@ -6,11 +6,11 @@
 </head>
 
 <style>
-	table, p, h1, li {
+/* 	table, p, h1, li {
 		font-family: arial, sans-serif;
 		border-collapse: collapse;
 		width: 100%;
-	}
+	} */
 	td, th {
 		border: 1px, solid, #dddddd;
 		text-align: left;
@@ -23,13 +23,13 @@
 
 <body>
 
-<h1>Résultat de la saisie</h1>
+<h1>Voici les coordonnées du nouveau client ajouté à la BDD : </h1>
 
-<h1>Nom : ${nouveauClient.nom}</h1>
-<h1>Prénom : ${nouveauClient.prenom}</h1>
-<h1>Adresse : ${nouveauClient.adresse}</h1>
-<h1>Code Postal : ${nouveauClient.codePostal}</h1>
-<h1>Ville : ${nouveauClient.ville}</h1>
+<p>Nom : ${nouveauClient.nom}</p>
+<p>Prénom : ${nouveauClient.prenom}</p>
+<p>Adresse : ${nouveauClient.adresse}</p>
+<p>Code Postal : ${nouveauClient.codepostal}</p>
+<p>Ville : ${nouveauClient.ville}</p>
 
 </body>
 
