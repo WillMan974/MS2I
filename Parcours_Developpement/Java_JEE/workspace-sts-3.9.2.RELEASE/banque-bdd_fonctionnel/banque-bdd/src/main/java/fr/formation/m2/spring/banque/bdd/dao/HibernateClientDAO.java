@@ -6,6 +6,7 @@ import org.hibernate.HibernateException;
 import org.hibernate.SessionFactory;
 
 import fr.formation.m2.spring.banque.bdd.entities.Client;
+import fr.formation.m2.spring.banque.bdd.entities.Compte;
 import fr.formation.m2.spring.banque.bdd.util.BanqueException;
 
 public class HibernateClientDAO implements ClientDAO {
@@ -45,5 +46,14 @@ public class HibernateClientDAO implements ClientDAO {
 			 throw new BanqueException("Erreur recherche des clients");
 		 }
 	}
+	
+	//@Override
+		public void modifierClient(Client client) throws BanqueException {
+			try {
+				sessionFactory.getCurrentSession().merge(client);
+			} catch (HibernateException e) {
+				throw new BanqueException("Erreur de modification du client");
+			}
+		}
 
 }

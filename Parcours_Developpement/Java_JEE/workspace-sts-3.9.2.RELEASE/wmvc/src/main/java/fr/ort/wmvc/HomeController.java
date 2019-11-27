@@ -69,6 +69,7 @@ public class HomeController {
 		return new ModelAndView("test2", "data", model);
 	}
 	
+	
 	@RequestMapping(value="/test2a")
 	public String noModel(Model model) {
 		

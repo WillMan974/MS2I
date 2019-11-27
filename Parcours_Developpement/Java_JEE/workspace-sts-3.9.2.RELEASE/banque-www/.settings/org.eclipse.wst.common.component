@@ -7,6 +7,9 @@
         <dependent-module archiveName="BanqueMetier-0.0.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/BanqueMetier/BanqueMetier">
             <dependency-type>uses</dependency-type>
         </dependent-module>
+        <dependent-module archiveName="banque-bdd-0.0.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/banque-bddok_banque-bdd/banque-bddok_banque-bdd">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
 		<property name="java-output-path" value="target/classes"/>
         <property name="context-root" value="m1"/>
 	</wb-module>

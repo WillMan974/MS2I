@@ -93,6 +93,19 @@ public class Client {
 	public void setMotdepasse(String motdepasse) {
 		this.motdepasse = motdepasse;
 	}
+
+	@Override
+	public String toString() {
+		String newLine = System.getProperty("line.separator");
+		
+		return this.nom + " " + this.prenom + newLine + this.adresse + newLine + this.codepostal + newLine + this.ville; 
+	}
+	
+	
+	public String lightToString() {
+		return this.nom + " " + this.prenom; 
+	}
+	
 	
 	
 	

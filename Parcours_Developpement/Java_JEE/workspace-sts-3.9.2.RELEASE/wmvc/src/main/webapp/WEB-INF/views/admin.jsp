@@ -29,7 +29,7 @@
 <P>${message}.</P>
 
 <table>
-	<tr><th>url</th><th>descritpion</th></tr>
+	<tr><th>url</th><th>description</th></tr>
 	<tr><td><a href="ajoutClient">AjoutClient</td><td>Ajoute un client</td></tr>
 	<tr><td><a href="modifClient">ModifClient</td><td>Modifie un client</td></tr>
 	<tr><td><a href="<c:url value="/j_spring_security_logout" />">Deconnexion</a></td><td>Quitter le mode admin</td></tr>

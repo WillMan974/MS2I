@@ -23,14 +23,14 @@
 </style>
 
 <body>
-<form:form method="post" modelAttribute="clientAModifier" action="ajoutClient">
- <p><form:input path="nom"/></p>
- <p><form:input path="prenom"/></p>
- <p><form:input path="adresse"/></p>
- <p><form:input path="codePostal"/></p>
- <p><form:input path="ville"/></p>
- <p><input type="submit" value="Modifier"/></p>
-</form:form>
+	<form:form method="post" modelAttribute="clientAModifier" action="ajoutClient">
+		<p><form:input path="nom"/></p>
+		<p><form:input path="prenom"/></p>
+		<p><form:input path="adresse"/></p>
+		<p><form:input path="codePostal"/></p>
+		<p><form:input path="ville"/></p>
+		<p><input type="submit" value="Modifier"/></p>
+	</form:form>
 
 </body>
 

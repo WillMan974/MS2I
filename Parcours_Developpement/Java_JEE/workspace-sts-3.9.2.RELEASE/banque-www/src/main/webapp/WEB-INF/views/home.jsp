@@ -4,11 +4,13 @@
 <head>
 	<title>Home</title>
 </head>
-<body>
-<h1>
-	Hello world!  
-</h1>
 
-<P>  The time on the server is ${serverTime}. </P>
+<body>
+	<h1>Bienvenue sur WillyBank !</h1>
 </body>
+
+<footer>
+	<p>${serverTime}</p>
+</footer>
+
 </html>
